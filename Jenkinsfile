@@ -18,7 +18,7 @@ agent any
 							dir ("/mnt/SCM"){
 							           sh "scp -r -i new-pair.pem indexa.html ec2-user@10.0.2.181:/home/ec2-user"
 						
-							            sh "scp -r -i new-pair.pem indexb.html ec2-user@10.0.3.111:/home/ec2-user"
+							            
 							
 							}
 					      }
