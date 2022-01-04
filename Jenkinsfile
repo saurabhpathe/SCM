@@ -14,6 +14,7 @@ agent any
                                                                 sh "rm -rf SCM SCM@tmp"  
 							           sh "git clone https://github.com/saurabhpathe/SCM.git -b master"
 							           sh "cp -r new-pair.pem /mnt/SCM"
+								sh "chmod 440 new-pair.pem"
 							}
 							dir ("/mnt/SCM"){
 							           sh "scp -r -i new-pair.pem indexa.html ec2-user@10.0.2.181:/home/ec2-user"
