@@ -51,7 +51,7 @@ agent any
 			
 			           label {
 				               label "Slave-2"
-					             /*customWorkspace "/home/ec2-user/"   */
+					             customWorkspace "/home/ec2-user/"   
 			                 }
 			              }
 			      steps {
