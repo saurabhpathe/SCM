@@ -16,9 +16,9 @@ agent any
 							           sh "cp -r new-pair.pem /mnt/SCM"
 							}
 							dir ("/mnt/SCM"){
-							           sh "scp -r -i new-pair.pem indexa.html ec2-user@10.0.2.181:/var/www/html/"
+							           sh "scp -r -i new-pair.pem indexa.html ec2-user@10.0.2.181:/home/ec2-user"
 						
-							            sh "scp -r -i new-pair.pem indexb.html ec2-user@10.0.3.111:/var/www/html/"
+							            sh "scp -r -i new-pair.pem indexb.html ec2-user@10.0.3.111:/home/ec2-user"
 							
 							}
 					      }
@@ -35,7 +35,7 @@ agent any
 					steps {
 						
 						  sh "sudo chmod -R 777 /var/www/html"
-						
+						sh "cp /home/ec2-user/index1.html /var/www/html"
 						        sh "sudo mv /var/www/html/indexa.html /var/www/html/index.html"  
 						
 						
