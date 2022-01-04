@@ -48,8 +48,7 @@ agent any
 			
 			stage ('Slave-2') {
 			     agent {
-			
-			           label {
+		              label {
 				               label "Slave-2"
 					             customWorkspace "/home/ec2-user/"   
 			                 }
