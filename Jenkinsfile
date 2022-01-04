@@ -46,7 +46,7 @@ agent any
 			       }
 				  }
 			
-			stage ('Slave-2') {
+			stage ('Slave_2') {
 			     agent {
 		              label {
 				               label "Slave-2"
