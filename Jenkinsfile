@@ -46,25 +46,7 @@ agent any
 			       }
 				  }
 			
-			stage ('Slave_2') {
-			     agent {
-		              label {
-				               label "Slave-2"
-					             customWorkspace "/home/ec2-user/"   
-			                 }
-			              }
-			      steps {
-				       
-						  sh "sudo chmod -R 777 /var/www/html"
-						
-						   sh "sudo mv /var/www/html/indexb.html /var/www/html/index.html"   
-					   
-				
-						    sh "sudo service httpd start"
-					    }
-				
-					 
-				    }
+			
 			}	  
 	
  
